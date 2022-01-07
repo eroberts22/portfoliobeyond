@@ -24,11 +24,19 @@ body, ul, li, h1 {
     border: 0;
 }
 
-div h1 {
+h1 {
     text-align: center;
-    margin: 4%;
+    margin: 2%;
+    padding: 2%;
     color: var(--standard-text);
     font-size: 30pt;
+}
+
+h2 {
+    text-align: left;
+    margin: 2% 10%;
+    color: var(--standard-text);
+    font-size: 20pt;
 }
 
 /* Navigation Menu*/
@@ -84,7 +92,7 @@ div.img-holder:hover {
 div.gallery img {
     width: 100%;
     height: auto;
-    max-width: 600px;
+    max-width: 650px;
     max-height: 800px;
 }
 
