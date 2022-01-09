@@ -5,11 +5,10 @@
     --link-hover: rgb(76, 170, 247);
     --nav-color: rgb(0, 0, 0);
     --nav-hover: rgb(56, 56, 56);
-    --nav-active: rgb(78, 106, 138);
+    --nav-active: rgb(51, 94, 143);
     --nav-active-text: rgb(255, 255, 255);
     --box-color: rgba(0, 0, 0, 0.685);
     --gallery-highlight: rgba(78, 106, 138, 0.5);
-    
 }
 
 /* General Styling */
@@ -22,7 +21,7 @@ body, ul, li, h1 {
     padding: 0;
     border: 0;
 }
-
+/*
 h1 {
     text-align: center;
     padding-top: 20px;
@@ -86,6 +85,16 @@ h2 {
     padding: 10px;
 }
 
+.art-home-box {
+        text-align: center;
+        max-width: 1000px;
+        height: auto;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 70px;
+}
+
 .art-box {
     text-align: center;
     height: auto;
@@ -98,6 +107,13 @@ h2 {
 .card {
     margin-top: 20px;
 }
+
+.center-cropped {
+    object-fit:none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    height: 200px;
+    width: 200px;
+  }
 
 /* Navigation Menu*/
 #menu, #menu ul {
