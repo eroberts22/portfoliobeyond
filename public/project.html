@@ -1,46 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Portfolio Beyond</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/beyond.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
-<body class="image-body" id="project-body">
+
+<body class="image-body space-body">
     <nav>
         <ul id="menu">
             <li><a href="index.html">HOME</a></li>
             <li><a class="active" href="project.html">PROJECTS</a>
                 <ul>
-                    <li><a href="space-explorer.html">Space Explorer</a></li></li>
-                </ul>
+                    <li><a href="space-explorer.html">Space Explorer</a></li>
             </li>
-            <li><a href="art.html">ART PORTFOLIO</a>
+        </ul>
+        </li>
+        <li><a href="art.html">PORTFOLIO</a>
             <ul>
                 <li><a href="space-explorer-gallery.html">Space Explorer</a></li>
-                <li><a href="apothecary-gallery.html">Apothecary</a></li>
+                <li><a href="apothecary-gallery.html">Haunted Apothecary</a></li>
                 <li><a href="other-art.html">Other Art</a></li>
-            </li>
-            </ul>
-            <li><a href="about.html">ABOUT</a></li>
+        </li>
+        </ul>
+        <li><a href="about.html">ABOUT</a></li>
         </ul>
     </nav>
-    <div class="central-box" id="project-box">
+    <div class="central-box title-box">
         <h1>Projects</h1>
-        <ul>
-            <li>Software Engineering Client Project - coming soon</li>
-            <li>Internet Applications Client Project - coming soon</li>
-            <li><a href="https://github.com/eroberts22/portfoliobeyond">Portfolio Beyond Source Code</a></li>
-            <li><a href="https://github.com/eroberts22/coffeescript">Flex/Bison Coffee Maker Scripting Language - December 2021</a></li>
-            <li><a href="https://lizroberts2000.wixsite.com/asteroids-3d" target="_blank">C++/OpenGL/GLSL 3D Asteroids - April 2021</a></li>
-            <li><a href="https://github.com/eroberts22/apothecary">Java Dungeon Crawler - January 2021</a></li>
-            <li><a href="https://lizroberts2000.wixsite.com/garden-simulation" target="_blank">C++ Garden Simulation - April 2020</a></li>
-        </ul>
+    </div>
+    <div class="central-box project-box">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card text-white bg-dark mb-3 text-center">
+                    <div class="card-body">
+                        <h6 class="card-title">Space Explorer</h6>
+                        <a href="space-explorer.html">
+                            <img class="card-img-top" src="img/space_explorer/rocket.png" alt="space-explorer">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-white bg-dark mb-3 text-center">
+                    <div class="card-body">
+                        <h6 class="card-title">Haunted Apothecary</h6>
+                        <a href="apothecary.html">
+                            <img class="card-img-top" src="img/apothecary/spectre.png" alt="apothecary">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-white bg-dark mb-3 text-center">
+                    <div class="card-body">
+                        <h6 class="card-title">Coffee Maker Script</h6>
+                        <a href="coffeescript.html">
+                            <img class="card-img-top" src="img/coffee-script/coffeecup.png" alt="coffeescript">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="central-box project-box">
+            <h2 style="text-align: center;">Other Projects</h2>
+            <ul>
+                <!-- <li>Software Engineering Client Project - coming soon</li> -->
+                <li><a href="https://github.com/eroberts22/portfoliobeyond">Portfolio Beyond Source Code</a></li>
+                <li><a href="https://lizroberts2000.wixsite.com/asteroids-3d" target="_blank">C++/OpenGL/GLSL 3D
+                        Asteroids - April 2021</a></li>
+                <li><a href="https://lizroberts2000.wixsite.com/garden-simulation" target="_blank">C++ Garden Simulation
+                        - April 2020</a></li>
+            </ul>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

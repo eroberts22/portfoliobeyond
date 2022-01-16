@@ -4,11 +4,13 @@
     --standard-text: rgb(192, 192, 192);
     --link-hover: rgb(76, 170, 247);
     --nav-color: rgb(0, 0, 0);
-    --nav-hover: rgb(56, 56, 56);
+    --nav-hover: rgb(32, 33, 36);
     --nav-active: rgb(51, 94, 143);
+    /*rgb(51, 94, 143);*/
     --nav-active-text: rgb(255, 255, 255);
-    --box-color: rgba(0, 0, 0, 0.685);
-    --gallery-highlight: rgba(78, 106, 138, 0.5);
+    /*--box-color: rgba(0, 0, 0, 0.685);*/
+    --box-color: rgba(32, 33, 36, 0.685);
+    --gallery-highlight: rgba(51, 94, 143, 0.5);
 }
 
 /* General Styling */
@@ -44,21 +46,8 @@ h2 {
     background-position: center;
     background-attachment: fixed;
 }
-
-#home-body {
-    background-image: url(../img/Pink_Opaque.jpg);
-}
-
-#project-body {
-    background-image: url(../img/Pink_Opaque.jpg);
-}
-
-#art-body {
-    background-image: url(../img/Pink_Opaque.jpg);
-}
-
-#about-body {
-    background-image: url(../img/Pink_Opaque.jpg);
+.space-body {
+    background-image: url(../img/webpage-dark-clouds.png)
 }
 
 .central-box {
@@ -79,7 +68,7 @@ h2 {
 .title-box {
     text-align: center;
     height: auto;
-    max-width: 50%;
+    max-width: 40%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -93,7 +82,7 @@ h2 {
         margin: auto;
         margin-top: 50px;
         margin-bottom: 50px;
-        padding: 70px;
+        padding: 5%;
 }
 
 .art-box {
@@ -102,19 +91,48 @@ h2 {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 70px;
+    padding: 5%
 }
 
 .card {
     margin-top: 20px;
 }
 
-.center-cropped {
-    object-fit:none; /* Do not scale the image */
-    object-position: center; /* Center the image within the element */
-    height: 200px;
-    width: 200px;
-  }
+.card:hover {
+    -webkit-box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
+    -moz-box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
+    box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
+}
+
+/* List Formating*/
+.project-box {
+    text-align: left;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 5%;
+}
+
+div.list-box ul {
+    list-style-type:square;
+}
+
+div ul li {
+    color:var(--standard-text);;
+    margin: 10px 0;
+}
+
+div ul li a {
+    color:var(--standard-text);;
+    text-decoration: none;
+}
+
+div ul li a:hover {
+    color: var(--link-hover)
+}
+
 
 /* Navigation Menu*/
 div#nav-bar {
@@ -146,6 +164,7 @@ div#nav-bar {
 
 #menu li {
     margin: 0;
+    font-size: 100%;
     float:left;
     position: relative;
 }
@@ -156,7 +175,6 @@ div#nav-bar {
     text-decoration: none;
     color:var(--standard-text);
 }
-
 
 .active {
     background-color: var(--nav-active);
@@ -178,13 +196,13 @@ div#nav-bar {
 
 #menu ul {
     margin: 20px 0 0 0;
+    padding: 0;
     opacity: 0;
+    text-align: center;
     visibility: hidden;
     position: absolute;
     top: 46px;
-    left: 0;
     z-index: 1;
-    border-radius: 6px;
     background-color: var(--nav-color);
 }
 
@@ -192,80 +210,4 @@ div#nav-bar {
     opacity: 1;
     visibility: visible;
     margin: 0;
-}
-
-
-/* Image Gallery */
-/*div.gallery {
-    display: grid;
-    margin: 5% 10% 5% 10%;
-    width: 80%;
-    height: fit-content;
-    background-color: var(--box-color);
-}
-
-div.img-holder {
-    margin: 10px;
-    padding: 10px;
-    float: left;
-}
-
-div.img-holder:hover {
-    -webkit-box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
-    -moz-box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
-    box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-    max-width: 650px;
-    max-height: 800px;
-}
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
-
-@media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-@media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-}*/
-
-/* List Formating*/
-#project-box {
-    text-align: left;
-    height: auto;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    padding: 70px;
-}
-
-div.list-box ul {
-    list-style-type:square;
-}
-
-div ul li {
-    color:var(--standard-text);;
-    margin: 10px 0;
-}
-
-div ul li a {
-    color:var(--standard-text);;
-    text-decoration: none;
-}
-
-div ul li a:hover {
-    color: var(--link-hover)
 }
