@@ -1,7 +1,4 @@
 TODO---------------------------------------------------------------
-create panels for home - use cards
-- link to project page, art page, about page
-
 create page for space explorer
 - overview, link to assets page
 - game page - link to game
@@ -22,3 +19,6 @@ DONE---------------------------------------------------------------
 project page 
 - card link to space explorer, coffee script, and dungeon crawler
 - list links to other projects
+
+create panels for home - use cards
+- link to project page, art page, about page
