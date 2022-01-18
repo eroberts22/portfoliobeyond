@@ -104,11 +104,7 @@ h2 {
     text-align: center;
 }
 
-.card {
-    margin-top: 20px;
-}
-
-.card:hover {
+.hoverable:hover {
     -webkit-box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
     -moz-box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
     box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
