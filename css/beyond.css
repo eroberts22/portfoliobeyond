@@ -224,6 +224,7 @@ https://erikterwan.com/ */
 #menu {
     position: absolute;
     width: 300px;
+    min-height: 100vh;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
@@ -244,7 +245,7 @@ https://erikterwan.com/ */
 }
 
 #menu li ul {
-    list-style: none;
+    display: none;
 }
 
 /* Old Navigation Menu*/

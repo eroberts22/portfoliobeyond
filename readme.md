@@ -1,10 +1,4 @@
 TODO---------------------------------------------------------------
-create page for space explorer
-- overview, link to assets page
-- game page - link to game
-  
-game page
-- javascript
 
 create page for coffee script
 - overview, imgs 
@@ -22,3 +16,12 @@ project page
 
 create panels for home - use cards
 - link to project page, art page, about page
+- 
+game page
+- javascript
+
+create page for space explorer
+- overview, link to assets page
+- game page - link to game
+  
+
