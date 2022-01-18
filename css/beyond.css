@@ -14,12 +14,17 @@
 /* General Styling */
 html {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
 }
 
 body, ul, li, h1 {
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+body {
+    height: 100vh; /* trying to fix url jump*/ 
 }
 
 p a {
@@ -111,14 +116,14 @@ h2 {
 }
 
 /* List Formating*/
+/*
 .project-box {
     text-align: left;
     height: auto;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    
-}
+} */
 
 div.list-box ul {
     list-style-type:square;
