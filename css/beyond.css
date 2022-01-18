@@ -27,9 +27,18 @@ body {
     height: 100vh; /* trying to fix url jump*/ 
 }
 
+p {
+    font-size: calc(0.75em + 1vmin);   
+}
 p a {
     text-decoration: none;
 }
+
+p img {
+    max-width: 50%;
+    float: right;
+}
+
 /*
 h1 {
     text-align: center;
