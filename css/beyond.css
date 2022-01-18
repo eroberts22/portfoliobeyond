@@ -7,6 +7,7 @@
     --nav-hover: rgb(32, 33, 36);
     --nav-active: rgb(84, 54, 133);
     --nav-active-text: rgb(255, 255, 255);
+    --nav-hover-text: rgb(63,76,171);
     --box-color: rgba(0,0,0, 0.685);
     --gallery-highlight: rgba(115, 83, 168, 0.5);
 }
@@ -75,7 +76,8 @@ h2 {
     flex-direction: column;
     box-sizing: border-box;
     overflow-wrap: break-word;
-    word-break: break-word;
+    word-break: keep-all;
+    
     width:80%;
     max-width: 70%;
     margin:auto;
@@ -104,11 +106,6 @@ h2 {
 .card {
     margin-top: 20px;
 }
-
-
-/*.embed-responsive .card-img-top {
-    object-fit: cover;
-}*/
 
 .card:hover {
     -webkit-box-shadow:inset 0px 0px 0px 10px var(--gallery-highlight);
@@ -159,12 +156,12 @@ https://erikterwan.com/ */
 
 #menuToggle a {
     text-decoration: none;
-    color: #cdcdcd; /*TEXT COLOR*/
+    color: var(--standard-text); /*TEXT COLOR*/
     transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-    color: var(--nav-active)
+    color: var(--nav-hover-text);
 }
 
 #menuToggle input {
@@ -246,9 +243,11 @@ https://erikterwan.com/ */
     transform: none;
 }
 
+#menu li ul {
+    list-style: none;
+}
 
-
-/* Navigation Menu*/
+/* Old Navigation Menu*/
 /*
 div#nav-bar {
     padding: 0;
@@ -333,15 +332,3 @@ div#nav-bar {
 }
 
 */
-
-/* smartphone landscape*/
-@media only screen
-and (min-device-width: 321px) {
-    
-}
-
-/* smartphone portrait*/
-@media only screen
-and (min-device-width: 321px) {
-    
-}
