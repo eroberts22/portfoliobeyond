@@ -25,7 +25,6 @@ body, ul, li, h1 {
 }
 
 body {
-    background: rgb(0, 0, 0);
     height: 100vh; /* trying to fix url jump*/ 
 }
 
@@ -79,7 +78,7 @@ h2 {
     overflow-wrap: break-word;
     word-break: keep-all;
     width:80%;
-    max-width: 70%;
+    max-width: 75%;
     margin:auto;
     background-color: var(--box-color);
     color: var(--standard-text);
@@ -102,6 +101,14 @@ h2 {
 
 .art-box {
     text-align: center;
+}
+
+.hoverable {
+    -o-transition:0.3s;
+    -ms-transition:0.3s;
+    -moz-transition:0.3s;
+    -webkit-transition:0.3s;
+    transition:0.3s;
 }
 
 .hoverable:hover {
