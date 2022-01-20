@@ -1,5 +1,7 @@
 TODO---------------------------------------------------------------
 
+- fix js
+  
 create page for coffee script
 - overview, imgs 
 - make coffee cup

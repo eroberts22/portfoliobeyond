@@ -1,4 +1,5 @@
 // set active page, doesnt work
+/*
 $(document).ready(function () {
     $('.navbar-links ul li a').click(function () {
         //removing the previous selected menu state
@@ -7,7 +8,7 @@ $(document).ready(function () {
         $(this).parents("a").addClass('active');
 
     });
-});
+});*/
 
 // insert nav.html into each page
 $(function () { $("#navbar-placeholder").load("nav.html"); });
@@ -31,5 +32,8 @@ function myFunc() {
  
 };
 
-window.onload = myFunc;
+document.addEventListener("DOMContentLoaded", function(event){
+    window.onload = myFunc;
+  });
+
 
