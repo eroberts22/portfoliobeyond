@@ -1,6 +1,7 @@
 TODO---------------------------------------------------------------
 
-- fix js
+- mobile nav js issue
+  - temp fix, but not great
   
 create page for coffee script
 - overview, imgs 
