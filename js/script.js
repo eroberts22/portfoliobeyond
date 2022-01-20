@@ -32,8 +32,8 @@ function myFunc() {
  
 };
 
-document.addEventListener("DOMContentLoaded", function(event){
-    window.onload = myFunc;
-  });
+window.onload =function() {
+    setTimeout(myFunc, 1000);
+}
 
 
