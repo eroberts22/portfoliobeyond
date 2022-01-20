@@ -1,7 +1,4 @@
 TODO---------------------------------------------------------------
-
-- mobile nav js issue
-  - temp fix, but not great
   
 create page for coffee script
 - overview, imgs 
@@ -10,21 +7,12 @@ create page for coffee script
 create page for dungeon crawler
 - overview, link to assets
 
-DONE---------------------------------------------------------------
-- apothecary assets page
+about me page
 
-project page 
-- card link to space explorer, coffee script, and dungeon crawler
-- list links to other projects
+KNOWN ISSUES-------------------------------------------------------
 
-create panels for home - use cards
-- link to project page, art page, about page
-- 
-game page
-- javascript
-
-create page for space explorer
-- overview, link to assets page
-- game page - link to game
+mobile nav js issue
+- temp fix, but not robust 
   
-
+scrolling on mobile devices causes background to move
+- known issue with mobile browsers, i just haven't looked into a fix yet
