@@ -105,6 +105,35 @@ p img {
    color: var(--turquoise);
 }
 
+.page-sub-title {
+    text-align: left;
+    font-family: 'Ubuntu';
+    font-size: calc(1.0em + 0.5vmin);
+    font-weight: 400;
+    color: var(--off-white);
+    padding-left: 20%;
+}
+
+.page-sub-title a span {
+    color: var(--off-white);
+}
+
+.page-sub-title a {
+    color: var(--turquoise);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-sub-title a:hover {
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+.page-sub-title a:hover span{
+    color: var(--turquoise);
+    text-decoration: none;
+}
+
 .art-box {
     text-align: center;
 }
@@ -122,10 +151,6 @@ p img {
     -webkit-box-shadow:inset 0px 0px 0px 10px var(--opaque-purple);
     -moz-box-shadow:inset 0px 0px 0px 10px var(--opaque-purple);
     box-shadow:inset 0px 0px 0px 10px var(--opaque-purple);
-}
-
-.card .card-body .card-title{
-    font-family: 'Ubuntu';
 }
 
 /* List Formating*/
@@ -182,6 +207,11 @@ div.list-box ul li a:hover {
 .logo a:hover {
     text-decoration: none;
     color: var(--turquoise);
+}
+
+.logo a:hover span {
+    text-decoration: none;
+    color: var(--off-white);
 }
 
 
