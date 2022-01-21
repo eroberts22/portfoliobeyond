@@ -6,7 +6,7 @@
     --med-blue: rgb(63,76,171);
     --turquoise: rgb(33,179,220);
     --opaque-black: rgba(0,0,0, 0.685);
-    --opaque-purple: rgba(115, 83, 168, 0.5);
+    --opaque-purple: rgba(106, 71, 185, 0.5);
 }
 
 /* General Styling */
@@ -77,24 +77,10 @@ p img {
     font-family: 'Poppins';
 }
 
-/*
-.title-box {
-    text-align: center;
-    height: auto;
-    max-width: 35%;
-    padding: 10px;
-    margin-bottom: 0px;
-}
-
-.title-box h1 {
-    font-family: 'Ubuntu';
-    font-size: calc(1.5em + 0.5vmin);
-}*/
-
 .page-title {
     text-align: left;
     font-family: 'Ubuntu';
-    font-size: calc(2.0em + 0.5vmin);
+    font-size: calc(2.0em + 1.0vmin);
     font-weight: 500;
     color: var(--off-white);
     margin-top: 25px;
@@ -136,6 +122,10 @@ p img {
 
 .art-box {
     text-align: center;
+}
+
+.art-box h2 {
+    margin-bottom: 2%;
 }
 
 /* card alterations */
@@ -183,12 +173,11 @@ div.list-box ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   /* background: black;*/
     color: var(--off-white);
 }
 
 .logo {
-    font-size: calc(1.5em + 0.5vmin);
+    font-size: calc(1.5em + 1.5vmin);
     font-family: 'Ubuntu' sans-serif;
     margin: 0.5rem 1.5rem;
 }
@@ -286,7 +275,7 @@ div.list-box ul li a:hover {
 }
 
 /* nav bar for smaller screen sizes */
-@media (max-width: 700px) {
+@media (max-width: 770px) {
     .toggle-button {
         display: flex;
     }
@@ -333,218 +322,3 @@ div.list-box ul li a:hover {
     }
     
 }
-/* Nav Bar
-https://erikterwan.com/ */
-
-/*
-.navbar {
-    background-color: black;
-}
-
-.navbar .logo {
-    font-family: 'Ubuntu';
-    color: var(--turquoise);
-    font-size: calc(1.5em + 0.5vmin);
-    font-weight: 500;
-    right: 5%;
-    padding: 10px 20px;
-}
-
-#menuToggle {
-    display: block;
-    position: relative;
-    top: 12%;
-    left: 30px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-#menuToggle a {
-    text-decoration: none;
-    color: var(--off-white); 
-    transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-    color: var(--turquoise);
-}
-
-#menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left:-5px;
-    cursor:pointer;
-    opacity: 0; 
-    z-index: 2;
-    -webkit-touch-callout: none;
-}
-
-#menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-    transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu {
-    position: absolute;
-    width: 300px;
-    min-height: 100vh;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: black;
-    list-style: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-150%, 0); 
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li {
-    padding: 10px 0;
-}
-
-#menuToggle input:checked ~ ul {
-    transform: none;
-}
-
-#menu li ul {
-    display: none;
-}
-*/
-
-/* Old Navigation Menu*/
-/*
-div#nav-bar {
-    padding: 0;
-    margin: 0;
-}
-
-#menu, #menu ul {
-    margin: 0;
-    margin: 0;
-    list-style: none;
-}
-
-#menu {
-    width: 100%;
-    margin: 0px;
-    background-color: var(--nav-color);
-}
-
-#menu::before,
-#menu::after {
-    content: '';
-    display: table;
-}
-
-#menu::after {
-    clear: both;
-}
-
-#menu li {
-    margin: 0;
-    font-size: 100%;
-    float:left;
-    position: relative;
-}
-
-#menu a {
-    float: left;
-    padding: 12px 40px;
-    text-decoration: none;
-    color:var(--standard-text);
-    white-space: pre-wrap;
-}
-
-.active {
-    background-color: var(--nav-active);
-    color: var(--nav-active-text);
-}
-
-#menu a.active {
-    color: var(--nav-active-text)
-}
-
-#menu li:hover > a:hover:not(.active)  {
-    color:var(--standard-text);
-    background-color: var(--nav-hover);
-}
-
-#menu li:hover > a:hover.active {
-    color:var(--nav-active-text);
-}
-
-#menu ul {
-    margin: 20px 0 0 0;
-    padding: 0;
-    opacity: 0;
-    text-align: left;
-    visibility: hidden;
-    position: absolute;
-    top: 47px;
-    z-index: 1;
-    background-color: var(--nav-color);
-}
-
-#menu li:hover > ul {
-    opacity: 1;
-    visibility: visible;
-    margin: 0;
-}
-
-#menu li ul a {
-    padding: 12px;    
-}
-
-
-    --page-background: rgb(29, 38, 59);
-    --standard-text: rgb(192, 192, 192);
-    --link-hover: rgb(76, 170, 247);
-    --nav-color: rgb(0, 0, 0);
-    --nav-hover: rgb(32, 33, 36);
-    --nav-active: rgb(84, 54, 133);
-    --nav-active-text: rgb(255, 255, 255);
-    --nav-hover-text: rgb(63,76,171);
-    --turquoise: rgb(33,179,220);
-    --box-color: rgba(0,0,0, 0.685);
-    --gallery-highlight: rgba(115, 83, 168, 0.5);
-
-*/

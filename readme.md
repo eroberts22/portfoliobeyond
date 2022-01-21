@@ -16,3 +16,7 @@ mobile nav js issue
   
 scrolling on mobile devices causes background to move
 - known issue with mobile browsers, i just haven't looked into a fix yet
+
+game bugs
+- running out of fuel and not dying when hitting asteroid
+- occasional incorrect collisions
