@@ -5,11 +5,12 @@
     --light-blue: rgb(76, 170, 247);
     --med-blue: rgb(63,76,171);
     --turquoise: rgb(33,179,220);
-    --opaque-black: rgba(0,0,0, 0.685);
+    --opaque-black: rgba(0, 0, 0, 0.548);
     --opaque-purple: rgba(106, 71, 185, 0.5);
+    --gray: rgb(35, 44, 63);
 }
 
-/* General Styling */
+/******************************************************************** General Styling **************************************************************************************/
 html {
     min-height: 100vh;
 }
@@ -31,6 +32,12 @@ p {
 
 p a {
     text-decoration: none;
+    color: var(--light-blue);
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color:var(--med-blue)
 }
 
 p img {
@@ -47,7 +54,7 @@ p img {
     background-attachment: fixed;
 }
 .space-body {
-    background-image: url(../img/art_portfolio/webpage-dark-clouds.png)
+    background-image: url(../img/art_portfolio/digital/webpage-dark-clouds.png)
 }
 
 .central-box {
@@ -64,19 +71,34 @@ p img {
     margin:auto;
     background-color: var(--opaque-black);
     color: var(--off-white);
-    border-radius: 6px;
+    border-radius: 6px;/*
     border-color: var(--opaque-purple);
     border-style: solid;
-    border-width: 3px;
+    border-width: 3px;*/
     margin-top: 3%;
     margin-bottom: 5%;
     padding: 3%;
+}
+
+/*modifier for central box*/
+.transparent {
+    background-color: transparent;
+    border-style:none;
 }
 
 .central-box p {
     font-family: 'Poppins';
 }
 
+.art-box {
+    text-align: center;
+}
+
+.art-box h2 {
+    margin-bottom: 2%;
+}
+
+/******************************************************************** Page Title **************************************************************************************/
 .page-title {
     text-align: left;
     font-family: 'Ubuntu';
@@ -91,6 +113,7 @@ p img {
    color: var(--turquoise);
 }
 
+/******************************************************************** Page Subtitle **************************************************************************************/
 .page-sub-title {
     text-align: left;
     font-family: 'Ubuntu';
@@ -100,13 +123,14 @@ p img {
     padding-left: 20%;
 }
 
-.page-sub-title a span {
-    color: var(--off-white);
-}
-
 .page-sub-title a {
     color: var(--turquoise);
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-sub-title a span {
+    color: var(--off-white);
     transition: color 0.3s ease;
 }
 
@@ -115,20 +139,12 @@ p img {
     text-decoration: none;
 }
 
-.page-sub-title a:hover span{
+.page-sub-title a:hover span {
     color: var(--turquoise);
     text-decoration: none;
 }
 
-.art-box {
-    text-align: center;
-}
-
-.art-box h2 {
-    margin-bottom: 2%;
-}
-
-/* card alterations */
+/******************************************************************** Hover Border **************************************************************************************/
 .hoverable {
     -o-transition:0.3s;
     -ms-transition:0.3s;
@@ -143,7 +159,7 @@ p img {
     box-shadow:inset 0px 0px 0px 10px var(--opaque-purple);
 }
 
-/* List Formating*/
+/******************************************************************** List Formatting **************************************************************************************/
 div.list-box ul {
     font-size: calc(0.65em + 1vmin);   
 }
@@ -167,7 +183,13 @@ div.list-box ul li a:hover {
     color: var(--turquoise)
 }
 
-/*nav bar*/
+/******************************************************************** Custom Cards **************************************************************************************/
+
+.bg-gray {
+    background-color: var(--gray)!important;
+}
+
+/******************************************************************** Nav Bar **************************************************************************************/
 .navbar {
     z-index: 999;
     display: flex;
@@ -191,6 +213,7 @@ div.list-box ul li a:hover {
 
 .logo a span {
     color: var(--turquoise);
+    transition: color 0.3s ease;
 }
 
 .logo a:hover {
@@ -202,7 +225,6 @@ div.list-box ul li a:hover {
     text-decoration: none;
     color: var(--off-white);
 }
-
 
 .navbar-links ul {
     margin: 0;
@@ -320,5 +342,33 @@ div.list-box ul li a:hover {
         margin-top: 50px;
         transition: 0.3s;
     }
-    
+}
+
+/**/
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background:var(--light-blue);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
 }
