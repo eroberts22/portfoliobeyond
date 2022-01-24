@@ -90,6 +90,21 @@ p img {
     font-family: 'Poppins';
 }
 
+.inner-wrap {
+    float: left;
+    width: 100%;
+}
+
+.img-wrap {
+    width: 100%;
+}
+
+@media (min-width:1200px) {
+    .inner-wrap {
+        width: 50%;
+    }
+}
+
 .art-box {
     text-align: center;
 }
@@ -332,7 +347,12 @@ div.list-box ul li a:hover {
 
     .navbar-links li a {
         padding: .5rem 1rem;
-        transition: color 0.s ease;
+        transition: color 0.3s ease;
+        color: var(--turquoise);
+    }
+
+    .navbar-links li a:hover {
+        color: var(--med-blue);
     }
 
     .navbar-links.active {
