@@ -83,7 +83,7 @@
         <div class="page-title">Space Explorer<span>.</span></div>
         <div class="central-box">
             <div style="width: 100%;">
-                <div class="inner-wrap">
+                <div class="inner-wrap-half">
                     <p>
                         Space Explorer is a sidescroller version of the classic asteroids game implemented using HTML,
                         CSS, and
@@ -107,7 +107,7 @@
                         See the game assets <a href="space-explorer-gallery.html">here</a>.
                     </p>
                 </div>
-                <div class="inner-wrap">
+                <div class="inner-wrap-half">
                     <img class="img-wrap" src="img/space_explorer/rocket.png" alt="rocket">
                 </div>
             </div>
@@ -127,15 +127,115 @@
     <div id="coffee-script">
         <div class="page-title">Coffee Maker Script<span>.</span></div>
         <div class="central-box">
+            <!--description-->
             <div style="width: 100%;">
-                <div class="inner-wrap">
-                    
+                <div class="inner-wrap-twothird">
+                    <p>
+                        The coffee maker scripting language simulates potential interactions a user would have with a
+                        coffee maker,
+                        such as brewing coffee and setting the amount and strength of the coffee. Many coffee makers
+                        have a display
+                        that shows the current time, so to simulate that, I implemented a command to get the current
+                        time.
+                    </p>
+                    <p>
+                        See the source code <a href="https://github.com/eroberts22/coffeescript">here</a>.</p>
+                    </p>
                 </div>
-                <div class="inner-wrap">
-                    
+                <div class="inner-wrap-third">
+                    <img class="img-wrap" src="img/coffee-script/coffeecup.png">
                 </div>
-                <div class="inner-wrap">
-                    <p>Source Code: <a href="https://github.com/eroberts22/coffeescript">Flex/Bison Coffee Maker Scripting Language - December 2021</a></p>
+
+            </div>
+            <hr class="line-break">
+            <!--test script and output-->
+            <div style="width: 100%;">
+                <div class="inner-wrap-third">
+                    <h2>Test Script and Output</h2>
+                    <p>
+                        This is an example of a simple test script and the output it generates when run through the
+                        program.
+                    </p>
+                </div>
+                <div class="inner-wrap-third">
+                    <img class="img-wrap" src="img/coffee-script/test-script.png">
+                </div>
+                <div class="inner-wrap-third">
+                    <img class="img-wrap" src="img/coffee-script/script-output.png">
+                </div>
+            </div>
+            <hr class="line-break">
+            <!--language and structure-->
+            <div style="width: 100%;">
+                <div class="inner-wrap-third">
+                    <h2>Language and Structure</h2>
+                    <p>
+                        These are key words recognized by the lexer as well as the structure recognized by the parser.
+                        The parser generates commands which are added to a list to later be coverted to C++.
+                    </p>
+                </div>
+                <div class="inner-wrap-third">
+                    <img class="img-wrap" src="img/coffee-script/language-design.png">
+                </div>
+                <div class="inner-wrap-third">
+                    <img class="img-wrap" src="img/coffee-script/Bison-structure.png">
+                </div>
+            </div>
+            <hr class="line-break">
+            <!--Command Generation-->
+            <div style="width: 100%;">
+                <div class="inner-wrap-third">
+                    <h2>Command Generation</h2>
+                    <p>
+                        When the gencode function is called, it generates a command from the code it receives from the
+                        parser.
+                        The command is then added to the list of commands that will later be converted to C++ code.
+                    </p>
+                </div>
+                <div class="inner-wrap-third">
+                    <img class="img-wrap" src="img/coffee-script/gencode-addcmd.png">
+                </div>
+                <div class="inner-wrap-third">
+                    <img class="img-wrap" src="img/coffee-script/addcmdlist.png">
+                </div>
+            </div>
+            <hr class="line-break">
+            <!--CPP File generation-header-->
+            <div style="width: 100%;">
+                <div class="inner-wrap-half">
+                    <h2>C++ Header Generation</h2>
+                    <p>
+                        The generate_var_table function generates a table of necessary variables that will be generated
+                        into C++
+                        by the addHeader function. The addHeader iterates through the variable table and writes to a cpp
+                        file.
+                    </p>
+                </div>
+                <div class="inner-wrap-half">
+                    <img class="img-wrap" src="img/coffee-script/init-var.png">
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <div class="inner-wrap-twothird">
+                    <img class="img-wrap" src="img/coffee-script/headergeneration.png">
+                </div>
+                <div class="inner-wrap-third">
+                    <img class="img-wrap" src="img/coffee-script/generated-header.png">
+                </div>
+            </div>
+            <hr class="line-break">
+            <!--CPP File generation-main-function-->
+            <div style="width: 100%;">
+                <div class="inner-wrap-half">
+                    <h2>C++ Main Function Generation</h2>
+                    <p>
+                        The addProgram function runs through the list of commands and generates and writes C++ to a cpp
+                        file.
+                    </p>
+                    <img style="width: 100%;" src="img/coffee-script/addtoprgm.png">
+                </div>
+                <div class="inner-wrap-half">
+                    <img class="img-wrap" src="img/coffee-script/test-cpp-generation.png">
                 </div>
             </div>
         </div>
@@ -149,3 +249,8 @@
     <script src="js/scroll.js"></script>
 
 </html>
+
+
+<!--<div class="inner-wrap">
+    <p>Source Code: <a href="https://github.com/eroberts22/coffeescript">Flex/Bison Coffee Maker Scripting Language - December 2021</a></p>
+</div>-->
