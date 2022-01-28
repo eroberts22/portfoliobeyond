@@ -85,9 +85,9 @@ p img {
     padding: 2%;
 }
 
-@media (max-width:500px) {
+@media (max-width:992px) {
     .central-box {
-        max-width: 80%;
+        max-width: 75%;
     }
 }
 

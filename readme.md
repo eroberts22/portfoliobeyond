@@ -1,8 +1,6 @@
 TODO---------------------------------------------------------------
   
-create page for coffee script
-- overview, imgs 
-- make coffee cup
+-add hover with title for image gallery
   
 create page for dungeon crawler
 - overview, link to assets
