@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 /* Color Scheme */
 :root {
     --off-white: rgb(192, 192, 192);
     --light-blue: rgb(76, 170, 247);
-    --med-blue: rgb(63,76,171);
-    --turquoise: rgb(33,179,220);
-    --opaque-black: rgba(0, 0, 0, 0.548);
+    --med-blue: rgb(63, 76, 171);
+    --turquoise: rgb(33, 179, 220);
+    --opaque-black: rgba(0, 0, 0, 0.625);
     --opaque-purple: rgba(106, 71, 185, 0.5);
     --gray: rgb(35, 44, 63);
 }
@@ -22,12 +23,13 @@ body, ul, li, h1 {
 }
 
 body {
-    height: 100vh; /* trying to fix url jump*/ 
+    height: 100vh;
+    /* trying to fix url jump*/
     font-family: 'Ubuntu';
 }
 
 p {
-    font-size: calc(0.75em + 1vmin);   
+    font-size: calc(0.75em + 1vmin);
 }
 
 p a {
@@ -37,7 +39,7 @@ p a {
 }
 
 p a:hover {
-    color:var(--med-blue)
+    color: var(--med-blue)
 }
 
 p img {
@@ -52,7 +54,9 @@ p img {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    background-color: black;
 }
+
 .space-body {
     background-image: url(../img/art_portfolio/digital/webpage-dark-clouds.png)
 }
@@ -67,23 +71,31 @@ p img {
     overflow-wrap: break-word;
     word-break: keep-all;
     font-family: 'Ubuntu';
-    max-width:80%;
-    margin:auto;
+    max-width: 85%;
+    margin: auto;
     background-color: var(--opaque-black);
     color: var(--off-white);
-    border-radius: 6px;/*
+    border-radius: 6px;
+    /*
     border-color: var(--opaque-purple);
     border-style: solid;
     border-width: 3px;*/
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 5%;
-    padding: 3%;
+    padding: 2%;
+}
+
+@media (max-width:500px) {
+    .central-box {
+        max-width: 80%;
+    }
 }
 
 /*modifier for central box*/
 .transparent {
     background-color: transparent;
-    border-style:none;
+    border-style: none;
+    padding: 0;
 }
 
 .central-box p {
@@ -159,11 +171,12 @@ h2 {
     font-weight: 500;
     color: var(--off-white);
     margin-top: 25px;
+    margin-bottom: 10px;
     padding-left: 20%;
 }
 
 .page-title span {
-   color: var(--turquoise);
+    color: var(--turquoise);
 }
 
 /******************************************************************** Page Subtitle **************************************************************************************/
@@ -174,6 +187,7 @@ h2 {
     font-weight: 400;
     color: var(--off-white);
     padding-left: 20%;
+    margin-bottom: 10px;
 }
 
 .page-sub-title a {
@@ -199,26 +213,26 @@ h2 {
 
 /******************************************************************** Hover Border **************************************************************************************/
 .hoverable {
-    -o-transition:0.3s;
-    -ms-transition:0.3s;
-    -moz-transition:0.3s;
-    -webkit-transition:0.3s;
-    transition:0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .hoverable:hover {
-    -webkit-box-shadow:inset 0px 0px 0px 10px var(--opaque-purple);
-    -moz-box-shadow:inset 0px 0px 0px 10px var(--opaque-purple);
-    box-shadow:inset 0px 0px 0px 10px var(--opaque-purple);
+    -webkit-box-shadow: inset 0px 0px 0px 10px var(--opaque-purple);
+    -moz-box-shadow: inset 0px 0px 0px 10px var(--opaque-purple);
+    box-shadow: inset 0px 0px 0px 10px var(--opaque-purple);
 }
 
 /******************************************************************** List Formatting **************************************************************************************/
 div.list-box ul {
-    font-size: calc(0.65em + 1vmin);   
+    font-size: calc(0.65em + 1vmin);
 }
 
 div.list-box ul {
-    list-style-type:square;
+    list-style-type: square;
 }
 
 div.list-box ul li {
@@ -227,7 +241,7 @@ div.list-box ul li {
 }
 
 div.list-box ul li a {
-    color:var(--off-white);
+    color: var(--off-white);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -236,10 +250,39 @@ div.list-box ul li a:hover {
     color: var(--turquoise)
 }
 
+/******************************************************************** Album Grid **************************************************************************************/
+.album-grid {
+    margin: 2% auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.grid-item {
+    color:var(--off-white);
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden
+}
+
+.grid-item::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.grid-img {
+    flex-shrink:0;
+    -webkit-flex-shrink: 0;
+    max-width:100%;
+    max-height:100%;
+}
+
 /******************************************************************** Custom Cards **************************************************************************************/
 
 .bg-gray {
-    background-color: var(--gray)!important;
+    background-color: var(--gray) !important;
 }
 
 /******************************************************************** Nav Bar **************************************************************************************/
@@ -253,7 +296,7 @@ div.list-box ul li a:hover {
 
 .logo {
     font-size: calc(1.5em + 1.5vmin);
-    font-family: 'Ubuntu' sans-serif;
+    font-family: 'Ubuntu'sans-serif;
     margin: 0.5rem 1.5rem;
 }
 
@@ -322,30 +365,35 @@ div.list-box ul li a:hover {
     background: var(--off-white);
     border-radius: 3px;
     transform-origin: 3px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
 }
 
-.toggle-button .bar { /*middle*/
+.toggle-button .bar {
+    /*middle*/
     transform-origin: 0% 0%;
 }
 
-.toggle-button .bar:nth-last-child(1) { /*middle*/
+.toggle-button .bar:nth-last-child(1) {
+    /*middle*/
     transform-origin: 0% 100%;
 }
 
-.toggle-button .bar.active { /*middle*/
+.toggle-button .bar.active {
+    /*middle*/
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
 }
 
-.toggle-button .bar.active:nth-last-child(2) { /*top?*/
+.toggle-button .bar.active:nth-last-child(2) {
+    /*top?*/
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.toggle-button .bar.active:nth-last-child(1) { /*bottom*/
+.toggle-button .bar.active:nth-last-child(1) {
+    /*bottom*/
     transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -355,7 +403,7 @@ div.list-box ul li a:hover {
         display: flex;
     }
 
-    .logo a{
+    .logo a {
         color: var(--turquoise);
     }
 
@@ -364,8 +412,8 @@ div.list-box ul li a:hover {
     }
 
     .navbar-links {
-       display: none;
-       width: 100%;
+        display: none;
+        width: 100%;
     }
 
     .navbar {
@@ -403,12 +451,12 @@ div.list-box ul li a:hover {
 }
 
 /**/
-.scroll-up-btn{
+.scroll-up-btn {
     position: fixed;
     height: 45px;
     width: 42px;
-    background:var(--light-blue);
-    right: 30px;
+    background: var(--light-blue);
+    right: 20px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
@@ -422,11 +470,13 @@ div.list-box ul li a:hover {
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
-    bottom: 30px;
+
+.scroll-up-btn.show {
+    bottom: 20px;
     opacity: 1;
     pointer-events: auto;
 }
-.scroll-up-btn:hover{
+
+.scroll-up-btn:hover {
     filter: brightness(90%);
 }
