@@ -58,8 +58,15 @@ p img {
 }
 
 .space-body {
-    background-image: url(../img/art_portfolio/digital/webpage-dark-clouds.png)
+    background-image: none;
+    background-color: black;
 }
+@media (min-width:1000px) {
+    .space-body {
+        background-image: url(../img/art_portfolio/digital/webpage-dark-clouds.png)
+    }
+}
+
 
 .central-box {
     display: flex;
@@ -173,6 +180,7 @@ h2 {
     margin-top: 25px;
     margin-bottom: 10px;
     padding-left: 20%;
+    padding-right: 20%;
 }
 
 .page-title span {
