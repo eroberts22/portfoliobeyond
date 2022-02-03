@@ -158,6 +158,14 @@ p img {
     border-radius: 5px;
 }
 
+h1 {
+    color: var(--off-white);
+}
+
+h1 span {
+    color: var(--turquoise);
+}
+
 h2 {
     color: var(--turquoise);
 }
@@ -196,6 +204,10 @@ h2 {
     color: var(--off-white);
     padding-left: 20%;
     margin-bottom: 10px;
+}
+
+.page-sub-title span {
+    color: var(--turquoise);
 }
 
 .page-sub-title a {
@@ -274,6 +286,24 @@ div.list-box ul li a:hover {
     overflow:hidden
 }
 
+.grid-item-description {
+    position: absolute;
+    font-size: calc(0.5em + 1.5vmin);
+    color: var(--off-white);
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 15px; 
+    box-shadow: 0 0 8px 8px var(--off-white);
+    padding: 2%;
+    visibility:hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+/*
+.grid-item:hover .grid-item-description {
+    visibility: visible;
+    opacity: 1;
+}
+*/
 .grid-item::after {
     content: "";
     display: block;
@@ -289,8 +319,26 @@ div.list-box ul li a:hover {
 
 /******************************************************************** Custom Cards **************************************************************************************/
 
+.card-title {
+    color: var(--off-white);
+}
+
 .bg-gray {
     background-color: var(--gray) !important;
+}
+
+/******************************************************************** Small Logo **************************************************************************************/
+.small-logo {
+    width: 50px;
+    text-decoration: none;
+    margin: 1%;
+    color: var(--turquoise);
+    transition: color 0.3s;
+}
+
+.small-logo:hover {
+    opacity: 0.7;
+    color: var(--med-blue);
 }
 
 /******************************************************************** Nav Bar **************************************************************************************/
@@ -463,7 +511,7 @@ div.list-box ul li a:hover {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: var(--light-blue);
+    background: var(--turquoise);
     right: 20px;
     bottom: 10px;
     text-align: center;
