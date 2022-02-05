@@ -348,7 +348,9 @@ div.list-box ul li a:hover {
 .small-logo {
     width: 50px;
     text-decoration: none;
-    margin: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
     color: var(--turquoise);
     transition: color 0.3s;
 }
