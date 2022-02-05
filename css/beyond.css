@@ -24,7 +24,6 @@ body, ul, li, h1 {
 
 body {
     height: 100vh;
-    /* trying to fix url jump*/
     font-family: 'Ubuntu';
 }
 
@@ -47,6 +46,15 @@ p img {
     float: right;
 }
 
+p span {
+    color: var(--turquoise);
+}
+
+.tab {
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
 .image-body {
     background-size: cover;
     height: 100%;
@@ -67,7 +75,6 @@ p img {
     }
 }
 
-
 .central-box {
     display: flex;
     flex-wrap: wrap;
@@ -83,10 +90,6 @@ p img {
     background-color: var(--opaque-black);
     color: var(--off-white);
     border-radius: 6px;
-    /*
-    border-color: var(--opaque-purple);
-    border-style: solid;
-    border-width: 3px;*/
     margin-top: 2%;
     margin-bottom: 5%;
     padding: 2%;
@@ -124,11 +127,17 @@ p img {
     width: 100%;
 }
 
+.inner-wrap-half-small {
+    float: left;
+    width: 50%;
+}
+
 .img-wrap {
     width: 100%;
     padding: 20px;
 }
 
+/*
 @media (min-width:1000px) {
     .inner-wrap-twothird {
         width: 66%;
@@ -141,11 +150,19 @@ p img {
     .img-wrap {
         padding: 10px;
     }
-}
+}*/
 
 @media (min-width:1200px) {
     .inner-wrap-half {
         width: 50%;
+    }
+
+    .inner-wrap-twothird {
+        width: 66%;
+    }
+
+    .inner-wrap-third {
+        width: 33%;
     }
 
     .img-wrap {
@@ -167,6 +184,10 @@ h1 span {
 }
 
 h2 {
+    color: var(--turquoise);
+}
+
+h3 span {
     color: var(--turquoise);
 }
 
@@ -283,20 +304,16 @@ div.list-box ul li a:hover {
     display:flex;
     justify-content:center;
     align-items:center;
-    overflow:hidden
+    vertical-align: top;
+    overflow: hidden;
+    flex-direction: column;
 }
 
 .grid-item-description {
-    position: absolute;
-    font-size: calc(0.5em + 1.5vmin);
     color: var(--off-white);
-    background-color: rgba(0, 0, 0, 0.8); 
-    border-radius: 15px; 
-    box-shadow: 0 0 8px 8px var(--off-white);
-    padding: 2%;
-    visibility:hidden;
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-family: 'Poppins';
 }
 /*
 .grid-item:hover .grid-item-description {
@@ -307,7 +324,7 @@ div.list-box ul li a:hover {
 .grid-item::after {
     content: "";
     display: block;
-    padding-bottom: 100%;
+    /*padding-bottom: 100%;*/
 }
 
 .grid-img {
@@ -427,29 +444,24 @@ div.list-box ul li a:hover {
 }
 
 .toggle-button .bar {
-    /*middle*/
     transform-origin: 0% 0%;
 }
 
 .toggle-button .bar:nth-last-child(1) {
-    /*middle*/
     transform-origin: 0% 100%;
 }
 
 .toggle-button .bar.active {
-    /*middle*/
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
 }
 
 .toggle-button .bar.active:nth-last-child(2) {
-    /*top?*/
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 .toggle-button .bar.active:nth-last-child(1) {
-    /*bottom*/
     transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -506,7 +518,7 @@ div.list-box ul li a:hover {
     }
 }
 
-/**/
+/* scroll up button */
 .scroll-up-btn {
     position: fixed;
     height: 45px;
