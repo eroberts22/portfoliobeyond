@@ -1,11 +1,8 @@
 TODO---------------------------------------------------------------
   
--add hover with title for image gallery
-  
 create page for dungeon crawler
 - overview, link to assets
 
-about me page
 
 KNOWN ISSUES-------------------------------------------------------
 
